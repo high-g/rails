@@ -1,9 +1,6 @@
 class HomeController < ApplicationController
   def top
-    @posts = [
-      'test1',
-      'test2'
-    ]
+    @posts = Post.all
   end
 
   def about
